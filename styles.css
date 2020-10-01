@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap');
+
+/* Baseline */
+
+body {
+  background-color: #ffffff;
+  margin: 0px;
+  font-family: 'Lato';
+  color: #6c6e72;
+}
+
+img {
+  max-width: 100%;
+  min-width: 100%;
+  max-height: auto;
+}
+
+/* Subclass helpers */
+
+.flex-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; /* Grid might be nicer in case there is 5 pics etc. */
+}
+
+.margin_left {
+  margin-left: -6px;
+}
+
+/* HEADLINE section START */
+
+.headline_section {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.headline_headline {
+  margin-top: 35px;
+  margin-bottom: 0px;
+  color: #545454;
+  font-weight: 200;
+}
+
+.headline_ingress {
+  width: 420px;
+  display: inline-block;
+  color: #939393;
+}
+
+/* SONGS section START */
+
+.songs_section {
+  padding-top: 30px;
+  background-color: #F8F9FA;
+}
+
+.song_card {
+  min-width: 300px;
+  max-width: 120px;
+  font-size: 20px;
+  box-shadow: 0px 0px 3px 2px rgb(228, 226, 226);
+  padding-bottom: 15px;
+  margin: 5px;
+  margin-bottom: 20px;
+  border-radius: 2px;
+}
+
+.song_card_introduction {
+  padding-left: 15px;
+  padding-right: 13px;
+  font-size: 16px;
+}
+
+.song_card_bottom {
+  margin-left: 15px;
+}
+
+.song_card_button {
+  background-color: #ffffff;
+  color: #939393;
+  padding: 5px;
+  border: 2px solid #828282;
+  border-radius: 3px;
+}
+
+.song_card_data {
+  display: inline;
+}
+
+.song_card_data_element {
+  display: inline;
+  font-size: 16px;
+  margin-left: 45px;
+}
+
+/* Device width adjustments */
+
+@media only screen and (min-width: 1080px) {
+  .page_container {
+    width: 1200px;
+    margin: auto;
+  }
+  .songs_section {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .headline_section {
+    margin-bottom: 0px;
+  }
+  .headline_ingress {
+    width: 320px;
+  }
+}
+
+@media (max-width: 420px) {
+  .headline_ingress {
+    width: 260px;
+  }
+}
